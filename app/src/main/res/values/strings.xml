@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Stocks</string>
+    <string name="hint_search">Find company or ticker</string>
+    <string name="stocks">Stocks</string>
+    <string name="favourite">Favourite</string>
+    <string name="company_image">Company image</string>
+    <string name="image_star">Image star</string>
+    <string name="price">$%d</string>
+</resources>

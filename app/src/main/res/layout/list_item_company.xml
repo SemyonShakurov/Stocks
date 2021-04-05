@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/image_company_icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:contentDescription="@string/company_image"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/text_company_ticker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/image_company_icon"
+        app:layout_constraintStart_toEndOf="@+id/image_company_icon"
+        app:layout_constraintTop_toTopOf="@+id/image_company_icon"
+        app:layout_constraintVertical_bias="0.26"
+        tools:text="@tools:sample/first_names" />
+
+    <TextView
+        android:id="@+id/text_company_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/image_company_icon"
+        app:layout_constraintTop_toBottomOf="@+id/text_company_ticker"
+        tools:text="@tools:sample/cities" />
+
+    <ImageView
+        android:id="@+id/image_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:contentDescription="@string/image_star"
+        app:layout_constraintBottom_toBottomOf="@+id/text_company_ticker"
+        app:layout_constraintStart_toEndOf="@+id/text_company_ticker"
+        app:layout_constraintTop_toTopOf="@+id/text_company_ticker"
+        app:srcCompat="@drawable/ic_star" />
+
+    <TextView
+        android:id="@+id/text_stock_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/text_company_ticker"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_company_ticker"
+        tools:text="@tools:sample/us_zipcodes" />
+
+    <TextView
+        android:id="@+id/text_change_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/green"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_stock_price"
+        tools:text="@tools:sample/us_zipcodes" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
